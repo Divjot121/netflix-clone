@@ -1,21 +1,36 @@
+@font-face {
+    font-family: netflixbold;
+    src: url(Assets/Fonts/netflix-sans-font/NetflixSans-Bold.otf);
+}
+
+@font-face {
+    font-family: netflixlight;
+    src: url(Assets/Fonts/netflix-sans-font/NetflixSans-Light.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: netflixlight;
+}
+
+body {
+    background-color: black;
 }
 
 .main {
     background-image: url(Assets/Images/bg.jpg);
     background-position: center center;
-    background-size: max(12 00px, 100vw);
-    height: 80vh;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
     position: relative;
     background-repeat: no-repeat;
 }
 
 .box {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.57;
     position: absolute;
     top: 0;
     background-color: black;
@@ -43,12 +58,170 @@ nav {
 }
 
 .hero {
-    height: 100%;
+    height: calc(100% - 62px);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
-    z-index: 10 ;
+    padding: 0 30px;
+}
+
+.boldtitle {
+    font-family: netflixbold;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.watch {
+    font-family: netflixlight;
+    font-weight: 400;
+    line-height: 55px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.startmem {
+    font-family: netflixlight;
+    font-weight: 400;
+    line-height: 65px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line {
+    height: 11px;
+    background-color: #232323;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #99161d;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    height: 7vh;
+    padding: 3px 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: netflixbold;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+.mailbox {
+    color: rgb(255, 255, 255);
+    background-color: rgba(23, 23, 23, 0.5);
+    outline: none;
+    border: none;
+    height: 6vh;
+    padding: 3px 20px;
+    opacity: 0.9;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: netflixlight;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.mailbox:hover {
+    outline-color: #ffffff;
+}
+
+input.mailbox {
+    outline-color: #5e5e5e;
+    outline-style: solid;
+}
+
+.red-btn-sm {
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin-left: 15px;
+    position: relative;
+    z-index: 10;
+    width: 5vw;
+    height: 4vh;
+}
+
+.langbtn {
+    outline: none;
+    border: 1px solid #5e5e5e;
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    padding: 3px 6px;
+    position: relative;
+    z-index: 10;
+    width: 7vw;
+}
+
+.langbtn img {
+    position: absolute;
+    top: 20%;
+    left: 2;
+}
+
+#languageselect {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    padding: 3px 20px;
+    position: relative;
+    font-weight: bold;
+    width: 92px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firsttxt1 {
+    color: white;
+    font-family: netflixbold;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.firsttxt2 {
+    color: white;
+    font-family: netflixbold;
+    font-size: 24px;
+    font-weight: -400;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+
+.secImg  img{
+    width: 40vw;
+}
+
+.secImg video {
+    
 }
