@@ -134,15 +134,12 @@ nav {
     font-family: netflixlight;
     font-weight: 500;
     border-radius: 5px;
+    outline-color: #5e5e5e;
+    outline-style: solid;
 }
 
 .mailbox:hover {
     outline-color: #ffffff;
-}
-
-input.mailbox {
-    outline-color: #5e5e5e;
-    outline-style: solid;
 }
 
 .red-btn-sm {
@@ -195,33 +192,114 @@ input.mailbox {
     justify-content: center;
 }
 
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
 .firsttxt1 {
     color: white;
     font-family: netflixbold;
     font-size: 48px;
     font-weight: 900;
+    padding-left: 180px;
 }
 
 .firsttxt2 {
     color: white;
-    font-family: netflixbold;
+    font-family: netflixlight;
     font-size: 24px;
     font-weight: -400;
-    max-width: 70vw;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    padding-left: 180px;
+
 }
 
 .secImg {
     position: relative;
 }
 
-
-.secImg  img{
+.secImg img {
     width: 40vw;
+    position: relative;
+    z-index: 10;
+    margin: 50px 0px 0px 0px;
+}
+
+.secImg1 img {
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+    margin: 50px 0px 0px 0px;
 }
 
 .secImg video {
-    
+    position: absolute;
+    top: 83px;
+    right: 110px;
+    width: 25vw;
+}
+
+.secImg1 video {
+    position: absolute;
+    top: 700px;
+    right: 55px;
+    width: 31vw;
+}
+
+.card {
+    background-color: #000000;
+    height: 120px;
+    width: 350px;
+    position: absolute;
+    left: 150px;
+    top: 1400px;
+    border-radius: 6px;
+    outline-color: #5a5a5a;
+    outline-style: solid;
+    z-index: 10;
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgmovbn {
+    position: absolute;
+    left: 5px;
+    height: 6rem;
+    width: 4rem;
+}
+
+.downicon {
+    position: absolute;
+    right: 0;
+    width: 80px;
+}
+
+.movname {
+    right: 0;
+    font-family: netflixbold;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.down {
+    margin-right: 75px;
+    color: #006de3;
+    text-align: center;
+    font-family: netflixlight;
+    font-weight: 400;
+    font: 24px;
+}
+
+.faqs-header {
+    font-family: netflixbold;
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
