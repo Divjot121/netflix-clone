@@ -96,6 +96,10 @@ nav {
     background-color: #232323;
 }
 
+.line2 {
+    margin-top: 50px;
+}
+
 .btn {
     padding: 3px 8px;
     font-weight: bold;
@@ -294,12 +298,161 @@ nav {
     font: 24px;
 }
 
-.faqs-header {
+.faq {
     font-family: netflixbold;
     color: white;
+    background-color: #000;
     font-size: 48px;
     font-weight: 900;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    padding: 34px;
+}
+
+.faqsbox {
+    transition: all 0.3s ease;
+    display: flex;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding: 24px;
+    color: white;
+    max-width: 70vw;
+    font-family: netflixlight;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: 400;
+
+}
+
+.faqsbox:hover {
+    background-color: #414141;
+}
+
+.secondin {
+    color: white;
+    margin-top: 55px;
+    display: block;
+}
+
+.txt {
+    padding-top: 5px;
+    color: white;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: netflixlight;
+}
+
+.secondin {
+    color: white;
+    margin-top: 15px;
+    display: block;
+}
+
+footer {
+    color: #999999;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #999999;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer button {
+    display: block;
+    margin-top: 12px;
+}
+
+.end {
+    margin-top: 9px;
 }
